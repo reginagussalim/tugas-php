@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.background-image {
+    background: url(asset/background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.content-home {
+    width: 475px;
+    height: 340px;
+    padding-left: 100px;
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Style for gallery */
+.gallery {
+    text-align: center;
+    /* Mengatur posisi teks menjadi tengah */
+    padding: 30px 30px 30px 30px;
+    background: #FBF2E1;
+}
+
+.gallery-title {
+    padding-bottom: 30px;
+    /* Padding atas dan bawah sebesar 30px, kiri dan kanan 0 */
+}
+
+.container-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    padding: 10px;
+    width: calc(33.3% - 10px);
+    /* 1/3rd of the container width with some spacing */
+    height: 250px;
+    margin: 5px;
+    /* Adjust as needed for spacing */
+    box-sizing: border-box;
+    /* Include padding and border in the box size */
+    overflow-y: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the entire div */
+}
+
+/* Style for blog */
+.blog {
+    text-align: center;
+    /* Mengatur posisi teks menjadi tengah */
+    padding: 30px 40px 40px 30px;
+    background: black;
+}
+
+.blog-title {
+    padding-bottom: 30px;
+    color: #FBF2E1;
+}
+
+.post {
+    background: #FBF2E1;
+}
+
+.body-post {
+    text-decoration: none;
+    color: black;
+    background: #FBF2E1;
+}
+
+.body-post-title {
+    text-decoration: none;
+    color: black;
+    background: #FBF2E1;
+    padding: 7px;
+}
+
+.container-blog {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.post {
+    padding: 10px;
+    width: calc(33.3% - 10px);
+    /* 1/3rd of the container width with some spacing */
+    margin: 5px;
+    /* Adjust as needed for spacing */
+    box-sizing: border-box;
+    /* Include padding and border in the box size */
+    overflow-y: hidden;
+}
+
+.header-post img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the entire div */
+}
+
+
+/* Style for footer */
+.footer {
+    background-color: #FBF2E1;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.footer-title{
+    padding-bottom: 30px;
+}
+
+/* Style for social links */
+.social a {
+    color: #333; /* Link color */
+    font-size: 24px;
+    margin: 0 20px; /* Margin between social icons */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+.social a:hover {
+    color: #007bff; /* Change color on hover */
+}
